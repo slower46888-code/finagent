@@ -20,7 +20,7 @@ def get_env(name: str, default: str = "") -> str:
 
 
 # ---- 全局 ----
-APP_VERSION = "v2.0"
+APP_VERSION = "v2.1"
 
 # ---- DeepSeek（对话模型，OpenAI 兼容接口）----
 # 仅从 Streamlit Secrets / 环境变量读取，密钥绝不写入代码或仓库

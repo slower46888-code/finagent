@@ -29,7 +29,10 @@ html, body, .stApp, [class*="css"] {
   font-family: "PingFang SC", "Microsoft YaHei", "Noto Sans SC", "Segoe UI", system-ui, sans-serif;
   color: var(--text);
 }
-.stApp { background: linear-gradient(180deg, #F7F9FC 0%, #EFF3F9 100%); }
+.stApp {
+  background: radial-gradient(1200px 500px at 85% -10%, rgba(201, 162, 39, 0.16), transparent 60%),
+              linear-gradient(165deg, #102A52 0%, #16396E 42%, #1D4E89 74%, #2563A8 100%) fixed;
+}
 
 /* 主内容区：居中限宽、统一留白 */
 .block-container { max-width: 1100px; padding-top: 2.2rem; padding-bottom: 4rem; }
@@ -38,18 +41,21 @@ html, body, .stApp, [class*="css"] {
 #MainMenu, footer { visibility: hidden; }
 header[data-testid="stHeader"] { background: transparent; }
 
+/* 直接位于背景上的辅助文字改为浅色，保证深色背景可读性 */
+.block-container [data-testid="stCaptionContainer"] p { color: #C9D6EA; }
+
 /* ---------- 品牌头部 ---------- */
 .brand-header { text-align: center; margin: 1.2rem 0 1.6rem; }
-.brand-title { font-size: 1.9rem; font-weight: 700; color: var(--primary); letter-spacing: 0.02em; }
-.brand-sub { font-size: 0.95rem; color: var(--text-soft); margin-top: 0.45rem; }
+.brand-title { font-size: 1.9rem; font-weight: 700; color: #FFFFFF; letter-spacing: 0.02em; }
+.brand-sub { font-size: 0.95rem; color: #C9D6EA; margin-top: 0.45rem; }
 .brand-line {
   width: 64px; height: 3px; border-radius: 2px; margin: 0.9rem auto 0;
-  background: linear-gradient(90deg, var(--primary), var(--accent));
+  background: linear-gradient(90deg, #FFFFFF, var(--accent));
 }
 
 .page-header { margin: 0.4rem 0 0.2rem; }
-.page-title { font-size: 1.5rem; font-weight: 700; color: var(--primary); }
-.page-sub { font-size: 0.88rem; color: var(--text-soft); margin-left: 0.8rem; }
+.page-title { font-size: 1.5rem; font-weight: 700; color: #FFFFFF; }
+.page-sub { font-size: 0.88rem; color: #C9D6EA; margin-left: 0.8rem; }
 
 /* ---------- 登录卡片 ---------- */
 [data-testid="stForm"] {
