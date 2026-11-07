@@ -2,7 +2,7 @@
 
 > 金融领域智能问答智能体 —— 让人工智能赋能千行百业
 
-🌐 **线上访问**：https://finagent-dbbgsjvln9whresjc3t3uo.streamlit.app
+🌐 **线上访问**：https://finagent.streamlit.app
 
 基于 **RAG（检索增强生成）** 技术的金融智能问答系统：将金融知识文档构建为知识库，结合 DeepSeek 大模型，为用户提供**带引用溯源**的专业问答，支持多轮对话与文档在线管理。
 
